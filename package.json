@@ -47,5 +47,8 @@
   },
   "engines": {
     "node": "8.* || >= 10.*"
+  },
+  "dependencies": {
+    "tailwindcss": "^1.1.3"
   }
 }
