@@ -1,23 +1,26 @@
 <nav class="flex flex-col md:flex-row md:justify-between bg-indigo-700">
-  <div class="hidden md:block md:text-white md:text-center md:text-3xl md:font-extrabold md:bg-indigo-400 md:px-3 md:py-4">
-    YourStore
+  <div class="hidden md:block md:text-white md:text-center md:text-3xl md:font-extrabold md:bg-indigo-400 md:px-3 md:pt-5">
+    DecaStore
   </div>
 
   <div class="w-full md:w-2/6 py-1">
     <PowerSelect
       @tagName="div"
       @class="px-1 text-gray-700 md:py-1 md:my-6 md:mx-1 rounded leading-tight focus:outline-none focus:bg-white"
-      @selected={{destination}}
-      @options={{cities}}
-      @onChange={{action (mut destination)}}
+      @selected={{current}}
+      @options={{shops}}
+      @onChange={{action (mut current)}}
     as |name|>
       {{name}}
     </PowerSelect>
   </div>
 
   <div class="hidden md:block md:flex-col">
-    <div class="md:block md:text-white md:text-center md:text-2xl bg-indigo-400 md:px-2 md:py-3">User</div>
-    <div class="md:block md:text-white md:text-center md:text-xs md:bg-indigo-400 md:px-2 md:py-2">Admin</div>
+    <div class="md:block md:text-white md:text-center md:text-1xl md:bg-indigo-400 md:px-2 md:pb-2 md:pt-4">
+      {{fa-icon "user-circle"}}
+      TROSIN50
+    </div>
+    <div class="md:block md:text-white md:text-center md:text-xs md:bg-indigo-400 md:px-2 md:pb-6 md:pt-2">Admin</div>
   </div>
 </nav>
 
@@ -26,6 +29,6 @@
     <div class="text-gray-700 text-center bg-gray-400 p-2">1</div>
   </div>
   <div class="w-5/6 p-1 ">
-    <div class="text-gray-700 text-center bg-gray-400 p-2">Hello</div>
+    <div class="text-gray-700 text-center bg-gray-400 p-2">Some content comes here</div>
   </div>
 </div>
